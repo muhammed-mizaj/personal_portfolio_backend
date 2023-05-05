@@ -138,4 +138,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'staticfiles/images')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-# django_heroku.settings(locals())
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'https://personalportfoliobackend-production.up.railway.app'
+]
