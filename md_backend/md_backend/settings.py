@@ -139,3 +139,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
+
+CSRF_TRUSTED_ORIGINS = [
+     '192.168.0.1',
+    'localhost',
+    'https://personalportfoliobackend-production.up.railway.app'
+]
