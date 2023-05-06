@@ -3,5 +3,5 @@ from .serializers import ProjectSerializer
 from .models import Project
 
 class ProjectList(ListAPIView):
-    queryset = Project.objects.all().order_by('created_at')
+    queryset = Project.objects.filter(is_visible=True).order_by('-priority')
     serializer_class = ProjectSerializer
