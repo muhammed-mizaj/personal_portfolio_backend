@@ -11,7 +11,7 @@ To set up the project locally, follow these steps:
 3. Create a new virtual environment: `python3 -m venv env`
 4. Activate the virtual environment: `source env/bin/activate` (for Linux/macOS) or `env\Scripts\activate` (for Windows)
 5. Install the required dependencies: `pip install -r requirements.txt`
-6. Create a new PostgreSQL database and update the database credentials in `personal_portfolio/settings.py`
+6. Make a serverless Database using Neon DB https://neon.tech/docs/guides/django
 7. Run the database migrations: `python manage.py migrate`
 8. Load the initial data: `python manage.py loaddata projects.json`
 9. Start the development server: `python manage.py runserver`
